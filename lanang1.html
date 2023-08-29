@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let totalHarga = 150000;
+        let diskon = 0;
+
+        if (totalHarga >= 100000) {
+            diskon = 0.1 * totalHarga;
+        } else if (totalHarga >= 50000) {
+            diskon = 0.05 * totalHarga;
+        } else {
+            diskon = 0;
+        }
+
+        let hargaSetelahDiskon = totalHarga - diskon;
+
+        console.log(`Total harga: Rp${totalHarga}`);
+        console.log(`Diskon: Rp${diskon}`);
+        console.log(`Harga setelah diskon: Rp${hargaSetelahDiskon}`);
+    </script>
+</body>
+</html>
